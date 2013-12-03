@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Splitter Sample</title>
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <style type="text/css">
+  	body
+		{
+		  margin: 0px;
+		}
+  </style>
+</head>
+
+<body>
+
+  <div class="split-panes horizontal">
+  	<div class="split-pane1" style="background: #ddd; min-width: 200px">Pane 1</div>
+  	<div class="split-handler"></div>
+  	<div class="split-pane2" style="min-width: 100px">
+  	  <div class="split-panes vertical">
+				<div class="split-pane1" style="background: #eee">Pane 2</div>
+		  	<div class="split-handler"></div>
+		  	<div class="split-pane2" style="min-height: 100px">Pane 3</div>
+			</div>
+  	</div>
+  </div>
+
+  <script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+  <script src="js/splitter.js"></script>
+
+</body>
+
+</html>
